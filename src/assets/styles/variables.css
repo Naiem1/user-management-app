@@ -1,0 +1,11 @@
+:root {
+  --text-font-family: 'Roboto', sans-serif;
+  --nav-font-family: 'Montserrat', sans-serif;
+  --page-color: #f5f5f5;
+  --nav-color: #333;
+  --nav-text-color: #fff;
+  --font-color-secondary: #666666;
+
+  --font-size-nav: 1.5rem;
+  --font-size-text: 1rem;
+}

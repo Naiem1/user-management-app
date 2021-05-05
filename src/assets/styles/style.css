@@ -1,0 +1,275 @@
+@import "variables.css";
+/* Variables */
+:root {
+  --text-font-family: 'Roboto', sans-serif;
+  --nav-font-family: 'Montserrat', sans-serif;
+  --page-color: #e9f0fb;
+  --nav-color: #ffff;
+  --nav-text-color: #413838;
+  --font-color-secondary: #666666;
+  --light-color: #ffffff;
+  --font-size-nav: 1.5rem;
+  --font-size-text: 1rem;
+}
+
+/* Default Settings */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--text-font-family);
+  font-size: var(--font-size-text);
+  color: var(--font-color);
+  background: var(--page-color);
+}
+
+p {
+  font-size: var(--font-size-text);
+  color: var(--font-color-secondary);
+  line-height: 1.2;
+} 
+
+a {
+  font-size: var(--font-size-text);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* BEM - Container Block */
+.container {
+  max-width: 90%;
+  min-width: 500px;
+  margin: 0 auto;
+  background: var(--light-color);
+}
+
+.section {
+  width: 100%;
+}
+
+/* BEM - Sidebar Block */
+.sideNav {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--nav-color);
+}
+
+.sideNav .sideNav__menu {
+  padding: 0 15px;
+}
+
+.sideNav li {
+  padding: 24px 0;
+}
+
+.sideNav__icon {
+  margin-right: 8px;
+}
+
+.sideNav a {
+  display: flex;
+  align-items: center;
+  font-family: var(--nav-font-family);
+  font-weight: bold;
+  color: var(--nav-text-color);
+  padding: 10px 5px;
+}
+
+.sideNav a:hover {
+  background:  #d6d1c7;
+}
+
+/* App */
+.app {
+  width: 100%;
+  display: flex;
+}
+
+.main {
+  width: 100%;
+}
+
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: 90px;
+  background: #FFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.header p {
+  color: #000000;
+  font-size: 20px;
+}
+
+/* Home Content */
+.home-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-body {
+  height: 75vh;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(65, 62, 62, 0.9);
+  margin-top: 50px;
+}
+
+.left, .right {
+  padding-top: 40px;
+}
+
+.home-content ul {
+  padding: 0 30px;
+  margin-top: 10px;
+}
+
+.home-content li {
+  list-style-type: disc;
+  padding: 5px 0;
+}
+
+.home-content p {
+  color: #000;
+  font-size: 20px;
+  font-family: var(--text-font-family);
+}
+
+/* Add new user */
+.add-user {
+  width: 100%;
+}
+
+.adduser-container {
+  padding: 20px 40px 0;
+}
+
+.input-field {
+  flex-basis: 45%;
+}
+
+.input-field input {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  margin-left: 5px;
+}
+
+.assign-side {
+  flex-basis: 45%;
+  padding: 0 30px;
+}
+
+.add-user h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+}
+
+ th {
+  border-bottom: 2px solid #3e3e3e
+}
+
+td {
+  padding: 5px 0;
+}
+
+.input-field input, .assign-side table{
+  margin-top: 30px;
+}
+
+/* User List */
+
+.user-table .heading {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0; 
+}
+
+.user-table .heading h4 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.user-table table {
+  padding: 0 20px;
+}
+
+.group-table table{
+  padding: 30px 20px 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  width: 150px;
+  padding: 10px 0;
+  font-size: 16px;
+  background: #0069D9;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  color: #FFFF;
+}
+
+button:active {
+  border: 2px solid
+}
+
+.new-group .heading {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.new-group .heading h4 {
+  font-size: 20px;
+
+}
+
+.new-group .input-field{
+  padding: 30px;
+}
+
+input {
+  outline: none;
+  border: 1px solid #666666;
+}
+
+
+
+
+
+
